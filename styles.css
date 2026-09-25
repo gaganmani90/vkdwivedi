@@ -132,6 +132,13 @@ a:hover { text-decoration-thickness: 2px; }
 .gallery figure { margin: 0; }
 .gallery img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; }
 
+/* Field work */
+#fieldwork > .note { max-width: var(--measure); }
+.field-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 17rem)); gap: clamp(1rem, 2.5vw, 1.75rem); }
+.field-gallery figure { margin: 0; }
+.field-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; }
+.field-gallery figcaption { font-family: var(--sans); font-size: .88rem; line-height: 1.45; color: var(--ink-soft); margin-top: .6rem; }
+
 /* Video */
 .video { margin: 0; max-width: 48rem; }
 .video-frame { position: relative; aspect-ratio: 16 / 9; background: var(--ink); border-radius: 4px; overflow: hidden; }
@@ -178,6 +185,7 @@ img { max-width: 100%; }
   .entries h3, .theses h3 { font-size: 1.05rem; }
   .milestones li { grid-template-columns: 1fr; gap: .15rem; }
   .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 36rem; }
+  .field-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .site-footer { padding: 2rem var(--gutter) 2.5rem; }
 }
 @media (max-width: 480px) {
@@ -185,4 +193,5 @@ img { max-width: 100%; }
   .facts { display: flex; flex-wrap: wrap; gap: .75rem 1.75rem; }
   .site-header nav { margin-left: calc(-.6rem); }
   .gallery { gap: .6rem; }
+  .field-gallery { grid-template-columns: minmax(0, 1fr); max-width: 22rem; }
 }
