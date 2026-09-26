@@ -140,7 +140,8 @@ a:hover { text-decoration-thickness: 2px; }
 .field-gallery figcaption { font-family: var(--sans); font-size: .88rem; line-height: 1.45; color: var(--ink-soft); margin-top: .6rem; }
 
 /* Video */
-.video { margin: 0; max-width: 48rem; }
+.videos { display: grid; gap: 2.5rem; max-width: 48rem; }
+.video { margin: 0; }
 .video-frame { position: relative; aspect-ratio: 16 / 9; background: var(--ink); border-radius: 4px; overflow: hidden; }
 .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video figcaption { font-family: var(--sans); font-size: .93rem; color: var(--ink-soft); margin-top: .75rem; }
